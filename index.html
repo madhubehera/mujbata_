@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mujbata - Connect, Share, Engage</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+          <img src="images/mujbata-logo.png" alt="Mujbata Logo" />
+          <span class="brand-name">Mujbata</span>
+        </div>
+      
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="nav-request-btn request-btn">Request</button>
+        
+
+      </header>
+      
+      
+      <div id="booking-container">
+        <!-- Step 1: Request Button -->
+        <button id="requestBtn" class="nav-request-btn request-btn">Request</button>
+      
+        <!-- Step 2: Calendar -->
+        <div id="calendarSection" style="display: none;">
+          <h3>Select a Date</h3>
+          <input type="date" id="datePicker" />
+        </div>
+      
+        <!-- Step 3: Time Slots -->
+        <div id="timeSlotsSection" style="display: none;">
+          <h3>Select a Time Slot</h3>
+          <div id="timeSlots">
+            <!-- Time slot buttons will be injected here -->
+          </div>
+          <button id="nextBtn" style="display: none;">Next</button>
+        </div>
+      
+        <!-- Step 4: Details Form -->
+        <form id="detailsForm" style="display: none;">
+          <h3>Enter Your Details</h3>
+          <input type="text" placeholder="Name" required /><br />
+          <input type="email" placeholder="Email" required /><br />
+          <textarea placeholder="Any additional info"></textarea><br />
+          <button type="submit">Schedule</button>
+        </form>
+      </div>
+      
+      
+
+
+
+  <section class="hero">
+    <h1>Welcome to Mujbata</h1>
+    <p>The new era of social media — built to connect, inspire, and share.</p>
+    <a href="#features" class="btn">Explore Features</a>
+  </section>
+
+
+
+<section class="slider-section">
+    <div class="image-slider">
+      <img id="slider-image" src="images/img1.jpg" alt="Creative Marketing Agency" />
+      
+      <button id="prev-btn" class="slider-btn">❮</button>
+      <button id="next-btn" class="slider-btn">❯</button>
+    </div>
+  </section>
+  
+
+  <section class="features" id="features">
+    <h2>Core Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Instant Sharing</h3>
+        <p>Post your stories, thoughts, and media instantly.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Private Messaging</h3>
+        <p>Chat privately and securely with your friends and followers.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Community Growth</h3>
+        <p>Discover and grow with like-minded people globally.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="about" id="about">
+    <h2>About Mujbata</h2>
+    <p>Mujbata is more than just a social platform. It's a space designed for authentic connection, rich media sharing, and interactive storytelling — all in a safe, vibrant environment.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email us at <a href="mailto:contact@mujbata.com">contact@mujbata.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mujbata. All rights reserved.</p>
+  </footer>
+
+
+
+  
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

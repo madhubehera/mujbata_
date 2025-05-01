@@ -1,0 +1,377 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #4b2a82;
+    color: white;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3a2061;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .logo img {
+    height: 60px;
+  }
+
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+
+
+  .navbar nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffa94d;
+  }
+  
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #5b35a1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffa94d;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: #ffa94d;
+    color: #4b2a82;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #4b2a82;
+  }
+  
+  .features h2 {
+    margin-bottom: 2rem;
+    color: #ffa94d;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background-color: #3a2061;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+  }
+  
+  .feature-card h3 {
+    margin-bottom: 0.5rem;
+    color: #ffa94d;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 3rem 2rem;
+    background-color: #5b35a1;
+    text-align: center;
+  }
+  
+  .about h2 {
+    margin-bottom: 1rem;
+    color: #ffa94d;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 2rem;
+    background-color: #3a2061;
+    text-align: center;
+  }
+  
+  .contact a {
+    color: #ffa94d;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c174a;
+    color: #ccc;
+  }
+
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #4b2a82;
+    color: white;
+    padding-top: 100px; /* Adjust based on navbar height */
+  }
+  
+
+
+  
+  .nav-request-btn {
+    background-color: #ffa94d;
+    color: #4b2a82;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .navbar {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3a2061;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar > * {
+    flex-shrink: 0;
+  }
+  
+
+  
+  /* Gallery Animation (zoom on hover) */
+  .gallery-animation:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Honeycomb Animation (hex-style float effect) */
+  @keyframes honeycomb {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(3deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+  }
+  
+  .honeycomb-animation img {
+    animation: honeycomb 4s infinite ease-in-out;
+  }
+
+  
+  .slider-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    position: relative;
+  }
+  
+  .image-slider {
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .image-slider img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Navigation buttons */
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 169, 77, 0.8);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  #prev-btn {
+    left: 10px;
+  }
+  
+  #next-btn {
+    right: 10px;
+  }
+  
+  .slider-btn:hover {
+    background-color: #ff9900;
+  }
+
+  
+  /* Gallery animation (zoom-in on load) */
+@keyframes gallery-zoom {
+    from { transform: scale(1.05); opacity: 0.3; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .gallery-effect {
+    animation: gallery-zoom 0.6s ease-out;
+  }
+  
+  /* Honeycomb animation (float + rotate) */
+  @keyframes honeycomb-float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+  }
+  
+  .honeycomb-effect {
+    animation: honeycomb-float 1.5s ease-in-out;
+  }
+  
+
+  /* Modal base styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 1rem;
+    color: #ff6600;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+  }
+  
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .modal-content button {
+    background-color: #ff6600;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #ff8000;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #booking-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+  }
+  
+  #booking-container button {
+    margin: 10px 0;
+    padding: 10px 20px;
+  }
+    
